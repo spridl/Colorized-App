@@ -22,7 +22,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        colorView.layer.cornerRadius = 20
+        colorView.layer.cornerRadius = colorView.frame.height / 10
         
         insertValue(slider: redSlider, to: redValueLabel)
         insertValue(slider: greenSlider, to: greenValueLabel)
@@ -52,7 +52,8 @@ class ViewController: UIViewController {
             red: CGFloat(redSlider.value),
             green: CGFloat(greenSlider.value),
             blue: CGFloat(blueSlider.value),
-            alpha: 1)
+            alpha: 1
+        )
     }
     
     
