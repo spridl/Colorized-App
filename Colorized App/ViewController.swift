@@ -24,30 +24,24 @@ class ViewController: UIViewController {
         
         colorView.layer.cornerRadius = colorView.frame.height / 10
         
-        insertValue(slider: redSlider, to: redValueLabel)
-        insertValue(slider: greenSlider, to: greenValueLabel)
-        insertValue(slider: blueSlider, to: blueValueLabel)
+        setColor()
+        setValue(for: redValueLabel, greenValueLabel, blueValueLabel)
         
-        switchColorView()
-        
-    }
-    @IBAction func redSliderAction() {
-        insertValue(slider: redSlider, to: redValueLabel)
-        switchColorView()
-    }
-    @IBAction func greenSliderAction() {
-        insertValue(slider: greenSlider, to: greenValueLabel)
-        switchColorView()
-    }
-    @IBAction func blueSliderAction() {
-        insertValue(slider: blueSlider, to: blueValueLabel)
-        switchColorView()
     }
     
-    private func insertValue(slider: UISlider, to label: UILabel) {
-        label.text = String(format: "%.2f", slider.value)
+    @IBAction func rgbSlider(_ sender: UISlider) {
+        setColor()
+        switch sender {
+        case redSlider:
+            redValueLabel.text = string(from: redSlider)
+        case greenSlider:
+            greenValueLabel.text = string(from: greenSlider)
+        default:
+            blueValueLabel.text = string(from: blueSlider)
+        }
     }
-    private func switchColorView() {
+    
+    private func setColor() {
         colorView.backgroundColor = UIColor(
             red: CGFloat(redSlider.value),
             green: CGFloat(greenSlider.value),
@@ -56,6 +50,21 @@ class ViewController: UIViewController {
         )
     }
     
+    private func setValue(for labels: UILabel...) {
+        labels.forEach { label in
+            switch label {
+            case redValueLabel:
+                redValueLabel.text = string(from: redSlider)
+            case greenValueLabel:
+                greenValueLabel.text = string(from: greenSlider)
+            default:
+                blueValueLabel.text = string(from: blueSlider)
+            }
+        }
+    }
     
+    private func string(from slider: UISlider) -> String {
+        String(format: "%.2f", slider.value)
+    }
 }
 
