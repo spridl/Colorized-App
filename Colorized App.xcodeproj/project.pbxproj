@@ -7,19 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		959FF09227E4F71D00496A7B /* ColorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 959FF09127E4F71D00496A7B /* ColorViewController.swift */; };
+		959FF09427E51F8600496A7B /* Extension UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 959FF09327E51F8600496A7B /* Extension UIColor.swift */; };
 		95F0776827D156C200339FF7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95F0776727D156C200339FF7 /* AppDelegate.swift */; };
 		95F0776A27D156C200339FF7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95F0776927D156C200339FF7 /* SceneDelegate.swift */; };
-		95F0776C27D156C200339FF7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95F0776B27D156C200339FF7 /* ViewController.swift */; };
+		95F0776C27D156C200339FF7 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95F0776B27D156C200339FF7 /* SettingsViewController.swift */; };
 		95F0776F27D156C200339FF7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95F0776D27D156C200339FF7 /* Main.storyboard */; };
 		95F0777127D156C200339FF7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95F0777027D156C200339FF7 /* Assets.xcassets */; };
 		95F0777427D156C200339FF7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95F0777227D156C200339FF7 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		959FF09127E4F71D00496A7B /* ColorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorViewController.swift; sourceTree = "<group>"; };
+		959FF09327E51F8600496A7B /* Extension UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension UIColor.swift"; sourceTree = "<group>"; };
 		95F0776427D156C200339FF7 /* Colorized App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Colorized App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		95F0776727D156C200339FF7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		95F0776927D156C200339FF7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		95F0776B27D156C200339FF7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		95F0776B27D156C200339FF7 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		95F0776E27D156C200339FF7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		95F0777027D156C200339FF7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		95F0777327D156C200339FF7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -58,7 +62,9 @@
 			children = (
 				95F0776727D156C200339FF7 /* AppDelegate.swift */,
 				95F0776927D156C200339FF7 /* SceneDelegate.swift */,
-				95F0776B27D156C200339FF7 /* ViewController.swift */,
+				95F0776B27D156C200339FF7 /* SettingsViewController.swift */,
+				959FF09127E4F71D00496A7B /* ColorViewController.swift */,
+				959FF09327E51F8600496A7B /* Extension UIColor.swift */,
 				95F0776D27D156C200339FF7 /* Main.storyboard */,
 				95F0777027D156C200339FF7 /* Assets.xcassets */,
 				95F0777227D156C200339FF7 /* LaunchScreen.storyboard */,
@@ -138,8 +144,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				95F0776C27D156C200339FF7 /* ViewController.swift in Sources */,
+				95F0776C27D156C200339FF7 /* SettingsViewController.swift in Sources */,
+				959FF09427E51F8600496A7B /* Extension UIColor.swift in Sources */,
 				95F0776827D156C200339FF7 /* AppDelegate.swift in Sources */,
+				959FF09227E4F71D00496A7B /* ColorViewController.swift in Sources */,
 				95F0776A27D156C200339FF7 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
